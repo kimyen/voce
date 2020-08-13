@@ -17,13 +17,13 @@
 
 {% for page in pages %}
   <url>
-    <loc>{{ SITEURL }}/{{ page.slug }}.html</loc>
+    <loc>{{ SITEURL }}/pages/{{ page.slug }}.html</loc>
     <priority>1.0</priority>
   </url>
 
   {% for translation in page.translations %}
   <url>
-    <loc>{{ SITEURL }}/{{ translation.url }}</loc>
+    <loc>{{ SITEURL }}/pages/{{ translation.url }}</loc>
     <priority>1.0</priority>
   </url>
   {% endfor %}
